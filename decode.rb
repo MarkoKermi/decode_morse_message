@@ -1,4 +1,5 @@
-morse_to_char = {
+# morse_to_char is defined here and used in the `upper_case` method below
+MORSE_TO_CHAR = {
   '.-' => 'a',
   '-...' => 'b',
   '-.-.' => 'c',
@@ -39,7 +40,7 @@ morse_to_char = {
 }.freeze
 
 def upper_case(stri)
-   morse_to_char[stri].upcase
+  MORSE_TO_CHAR[stri].upcase
 end
 
 def code_value(stri)
